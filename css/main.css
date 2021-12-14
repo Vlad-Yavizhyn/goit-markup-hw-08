@@ -53,11 +53,23 @@ img {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 738px;
+  }
 }
 
 .section__title {
@@ -66,10 +78,6 @@ img {
   letter-spacing: 0.03em;
   text-align: center;
   margin: 0px 0px 50px 0px;
-}
-
-.section {
-  padding: 94px 0px;
 }
 
 .backdrop {
@@ -446,16 +454,26 @@ img {
   margin-top: 30px;
 }
 
-.benefits {
-  display: flex;
+@media screen and (min-width: 768px) {
+  .benefits {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .benefits__item {
-  width: 270px;
+  width: 100%;
 }
 
 .benefits__item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .benefits__item {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
 }
 
 .benefits__box {
@@ -463,7 +481,7 @@ img {
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
-  width: 270px;
+  width: 100%;
   height: 120px;
   background-color: var(--button-background-color);
   border-radius: 4px;
@@ -477,11 +495,24 @@ img {
   margin: 0px 0px 10px 0px;
 }
 
+@media screen and (max-width: 767px) {
+  .benefits__titel {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .benefits__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+}
+
+@media screen and (max-width: 767px) {
+  .benefits__text {
+    text-align: center;
+  }
 }
 
 /* What we do */
