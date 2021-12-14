@@ -1,0 +1,25 @@
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #000000;
+    --accent-color: #2196f3;
+    --overlay-color: rgba(33, 150, 243, 0.9);
+
+    --additional-background-color: #2f303a;
+    --secondary-background-color: rgba(47, 48, 58, 0.8);
+    --button-background-color: #f5f4fa;
+    --active-button-color: #afb1b8;
+    --footer-background-color: rgba(255, 255, 255, 0.1);
+
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    // --tertiary-text-color: #ffffff;
+
+    --border-color: rgba(33, 33, 33, 0.2);
+    --box-shadow: rgba(0, 0, 0, 0.15)
+    
+    // --footer-background-color: #2f303a;
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    --main-font: 'Roboto', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
+  }

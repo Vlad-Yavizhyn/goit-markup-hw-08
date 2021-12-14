@@ -1,0 +1,42 @@
+{
+    "liveSassCompile.settings.formats": [
+      {
+        "format": "expanded",
+        "extensionName": ".css",
+        "savePath": "/css"
+      },
+      {
+        "format": "compressed",
+        "extensionName": ".min.css",
+        "savePath": "/css"
+      }
+    ],
+    "liveSassCompile.settings.excludeList": ["**/node_modules/**", ".vscode/**"],
+    "liveSassCompile.settings.generateMap": true,
+    "liveServer.settings.port": 1235,
+    "liveSassCompile.settings.autoprefix": null,
+    "cSpell.customDictionaries": {
+      "custom-dictionary-workspace": {
+        "name": "custom-dictionary-workspace",
+        "path": "${workspaceFolder:goit-markup-hw-07}/.cspell/custom-dictionary-workspace.txt",
+        "addWords": true,
+        "scope": "workspace"
+      }
+    },
+    "cSpell.words": [
+      "атак",
+      "защищённые",
+      "используют",
+      "Компании",
+      "конкурентов",
+      "коронавируса",
+      "платформу",
+      "площадка",
+      "распространения",
+      "сервера",
+      "современная",
+      "Технокряк",
+      "цифрового",
+      "шпионажа"
+    ]
+  }

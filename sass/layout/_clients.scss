@@ -1,0 +1,21 @@
+.actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.actions__link {
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--active-button-color);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--active-button-color);
+  transition: border-color 250ms var(--timing-function), fill 250ms var(--timing-function);
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+    fill: var(--accent-color);
+  }
+}
