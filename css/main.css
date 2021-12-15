@@ -72,6 +72,12 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
 .section__title {
   font-size: 36px;
   line-height: 1.16;
@@ -80,10 +86,8 @@ img {
   margin: 0px 0px 50px 0px;
 }
 
-@media screen and (min-width: 1599px) {
-  .section {
-    padding: 94px 0px;
-  }
+.section {
+  padding: 94px 0px;
 }
 
 .backdrop {
@@ -417,27 +421,25 @@ img {
 }
 
 .hero {
-  padding: 200px 0;
+  padding: 118px 0;
   background: var(--additional-background-color);
   text-align: center;
+  min-width: 480px;
+  min-height: 400px;
 }
 
 .overlay {
-  max-width: 1600px;
-  min-height: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  min-width: 480px;
+  min-height: 400px;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
 }
 
 .hero__title {
-  width: 696px;
+  width: 360px;
   margin: 0 auto;
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -460,25 +462,43 @@ img {
   margin-top: 30px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .benefits {
     display: flex;
     flex-wrap: wrap;
+    margin-left: -30px;
   }
 }
 
-.benefits__item {
-  width: 100%;
+@media screen and (min-width: 1200px) {
+  .benefits {
+    display: flex;
+    width: 1170px;
+  }
 }
 
-.benefits__item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 768px) {
+  .benefits__item {
+    width: 100%;
+  }
+  .benefits__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .benefits__item {
     flex-basis: calc(100% / 2 - 30px);
     margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits__item {
+    width: 270px;
+  }
+  .benefits__item:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
@@ -491,6 +511,12 @@ img {
   height: 120px;
   background-color: var(--button-background-color);
   border-radius: 4px;
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits__box {
+    width: 270px;
+  }
 }
 
 .benefits__titel {
@@ -524,6 +550,12 @@ img {
 /* What we do */
 .section__no-padding-top {
   padding-top: 0px;
+}
+
+@media screen and (max-width: 1200px) {
+  .section__no-padding-top {
+    display: none;
+  }
 }
 
 .section__title {
@@ -573,10 +605,6 @@ img {
   background-color: var(--button-background-color);
 }
 
-.team {
-  display: flex;
-}
-
 .team__item {
   background: var(--primary-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -584,7 +612,12 @@ img {
 }
 
 .team__item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.team__item img {
+  min-width: 420px;
+  min-height: 460px;
 }
 
 .team__name {
@@ -609,7 +642,7 @@ img {
 .socials {
   display: flex;
   justify-content: center;
-  width: 270px;
+  width: 100%;
   margin-top: 16px;
 }
 
