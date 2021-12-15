@@ -80,6 +80,12 @@ img {
   margin: 0px 0px 50px 0px;
 }
 
+@media screen and (min-width: 1599px) {
+  .section {
+    padding: 94px 0px;
+  }
+}
+
 .backdrop {
   position: fixed;
   z-index: 1;
