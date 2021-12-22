@@ -669,6 +669,12 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
+@media screen and (min-width: 480px) {
+  :not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 .team__name {
   font-size: 16px;
   line-height: 1.18;
