@@ -42,7 +42,7 @@
 }
 .footer-block {
   @media screen and (min-width: 480px) {
-  padding-bottom: 60px;
+  margin-bottom: 60px;
 }
 }
 
@@ -52,14 +52,31 @@
 }
 
 .footer__footer-box {
-  // display: flex;
-  // align-items: baseline;
   text-align: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
+
 
 .footer__join-box {
   // margin-left: 70px;
-  padding-bottom: 60px;
+  @media screen and (min-width: 480px) {
+  margin-bottom: 60px;
+}
+  @media screen and (min-width: 1200px) {
+  margin-left: 70px;
+  margin-bottom: 0;
+  }
 }
 
 .footer__join-text {
@@ -109,10 +126,13 @@
 
 .footer__submit-box {
   // margin-left: 93px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
 }
 
 .footer__submit-button {
-  margin-left: 105px;
+  margin-left: 125px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -137,6 +157,9 @@
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
   }
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+  }
 }
 
 .footer__submit-icon {
@@ -144,7 +167,10 @@
 }
 
 .footer__form {
-  // display: flex;
+  @media screen and (min-width: 1200px) {
+  display: flex;
+  }
+
 }
 
 .footer__submit-input {
@@ -164,4 +190,10 @@
   background: var(--additional-background-color);
   outline: none;
   margin-bottom: 20px;
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 }
