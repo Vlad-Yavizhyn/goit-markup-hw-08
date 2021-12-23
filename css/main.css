@@ -429,6 +429,7 @@ img {
   padding: 118px 0;
   background: var(--additional-background-color);
   text-align: center;
+  min-width: 480px;
 }
 
 @media screen and (min-width: 767px) {
@@ -646,6 +647,7 @@ img {
 
 .section__other-gackground {
   background-color: var(--button-background-color);
+  min-width: 480px;
 }
 
 @media screen and (min-width: 768px) {
@@ -803,7 +805,6 @@ img {
 }
 
 .actions__link {
-  width: 170px;
   height: 92px;
   border: 1px solid var(--active-button-color);
   border-radius: 4px;
@@ -930,6 +931,7 @@ img {
 .footer {
   padding: 60px 0;
   background: var(--additional-background-color);
+  min-width: 480px;
 }
 
 .footer__address-footer {
