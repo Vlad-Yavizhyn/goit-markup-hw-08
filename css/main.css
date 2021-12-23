@@ -763,7 +763,42 @@ img {
 
 .actions {
   display: flex;
-  justify-content: space-between;
+}
+
+@media screen and (max-width: 1200px) {
+  .actions {
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+.actions__item {
+  width: calc(100% / 2 - 30px);
+  height: 92px;
+}
+
+@media screen and (max-width: 1200px) {
+  .actions__item {
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .actions__item {
+    width: calc(100% / 3 - 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .actions__item {
+    width: 170px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .actions__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .actions__link {
@@ -781,6 +816,18 @@ img {
 .actions__link:hover, .actions__link:focus {
   border-color: var(--accent-color);
   fill: var(--accent-color);
+}
+
+@media screen and (min-width: 480px) {
+  .actions__link {
+    width: 210px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .actions__link {
+    width: 170px;
+  }
 }
 
 .filter {
@@ -920,17 +967,22 @@ img {
   color: var(--accent-color);
 }
 
+@media screen and (min-width: 480px) {
+  .footer-block {
+    padding-bottom: 60px;
+  }
+}
+
 .footer__footer-block {
   flex-grow: 1;
 }
 
 .footer__footer-box {
-  display: flex;
-  align-items: baseline;
+  text-align: center;
 }
 
 .footer__join-box {
-  margin-left: 70px;
+  padding-bottom: 60px;
 }
 
 .footer__join-text {
@@ -949,7 +1001,7 @@ img {
 
 .footer__actions-footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 20px;
 }
 
@@ -978,11 +1030,8 @@ img {
   margin-left: 10px;
 }
 
-.footer__submit-box {
-  margin-left: 93px;
-}
-
 .footer__submit-button {
+  margin-left: 105px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1009,14 +1058,9 @@ img {
   fill: var(--primary-color);
 }
 
-.footer__form {
-  display: flex;
-}
-
 .footer__submit-input {
-  width: 358px;
+  width: 100%;
   height: 50px;
-  margin-right: 12px;
   padding-left: 16px;
   font-style: normal;
   font-weight: normal;
@@ -1029,5 +1073,6 @@ img {
   border-radius: 4px;
   background: var(--additional-background-color);
   outline: none;
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=main.css.map */

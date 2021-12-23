@@ -12,17 +12,6 @@
     margin: -15px;
   }
 }
-  // @media screen and (min-width: 768px) {
-  // display: flex;
-  // flex-wrap: wrap;
-  // margin-left: -30px;
-  // }
-  // @media screen and (min-width: 1200px) {
-  //   width: 270px;
-  //   height: 428px;
-  //   flex-wrap: nowrap;
-  // }
-
 
 .team__item {
   background: var(--primary-color);
@@ -114,15 +103,6 @@
     background-color: var(--accent-color);
   }
 }
-
-// .team__social-link {
-//   fill: currentColor;
-//   &:hover,
-//   .team-social-link:focus {
-//     fill: #ffffff;
-//     background-color: var(--accent-color);
-//   }
-// }
 
 .team-social-icon {
   fill: var(--active-button-color);
