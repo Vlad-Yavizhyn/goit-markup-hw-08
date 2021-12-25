@@ -67,12 +67,16 @@
   
   .modal__checkbox-text {
     justify-content: center;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
     display: flex;
     align-items: center;
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.71;
+    }
   }
   
   .modal__send-button {

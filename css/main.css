@@ -104,6 +104,13 @@ img {
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
   transition: opacity 250ms var(--timing-function);
+  overflow-y: scroll;
+}
+
+@media screen and (max-width: 480px) {
+  .backdrop {
+    padding: 15px;
+  }
 }
 
 .backdrop.is-hidden {
@@ -112,15 +119,38 @@ img {
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
   padding: 40px;
-  width: 528px;
-  min-height: 581px;
   border-radius: 4px;
   background-color: var(--primary-color);
+  opacity: 1;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: transform 250ms var(--timing-function), opacity 250ms var(--timing-function);
+  transform: scale(1);
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%) scale(1);
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
 
 .modal__button-close {
@@ -218,12 +248,19 @@ img {
 
 .modal__checkbox-text {
   justify-content: center;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   display: flex;
   align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__checkbox-text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal__send-button {
