@@ -23,20 +23,20 @@
   }
 
   .projects__item {
-    @media screen and (min-width: 480px) and (max-width: 767px) {
-      width: 450px;
-      height: 404px;
-    }
+    // @media screen and (min-width: 480px) and (max-width: 767px) {
+    //   width: 450px;
+    //   height: 404px;
+    // }
   
     @media screen and (min-width: 768px) {
       flex-basis: calc(100% / 2 - 30px);
-      height: 440px;
+      // height: 440px;
       margin: 15px;
     }
   
     @media screen and (min-width: 1200px) {
       flex-basis: calc(100% / 3 - 30px);
-      height: 404px;
+      // height: 404px;
     }
   
     &:not(:last-child) {

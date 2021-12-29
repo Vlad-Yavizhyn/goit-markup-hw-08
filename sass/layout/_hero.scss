@@ -2,11 +2,11 @@
   padding: 118px 0;
   background: var(--additional-background-color);
   text-align: center;
-  min-width: 480px;
+  // min-width: 480px;
 }
 
 .overlay {
-  @media screen and (min-width: 767px) {
+  @media screen and (max-width: 767px) {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/Hero-mobile-480.jpg);
   background-size: cover;
@@ -49,7 +49,7 @@
 
 
 .hero__title {
-  width: 360px;
+  // width: 360px;
   margin: 0 auto;
   font-weight: 900;
   font-size: 26px;

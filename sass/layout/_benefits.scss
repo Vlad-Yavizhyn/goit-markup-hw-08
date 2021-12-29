@@ -63,9 +63,9 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-  @media screen and (max-width: 767px) {
-    text-align: center;
-  }
+  // @media screen and (max-width: 767px) {
+  //   text-align: center;
+  // }
 }
 
 /* What we do */
@@ -85,6 +85,9 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-title-color);
+  @media screen and (max-width: 1200px) {
+    margin-bottom: 30px;
+  }
 }
 
 .work {

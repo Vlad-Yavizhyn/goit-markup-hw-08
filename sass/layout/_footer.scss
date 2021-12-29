@@ -1,7 +1,7 @@
 .footer {
   padding: 60px 0;
   background: var(--additional-background-color);
-  min-width: 480px
+  // min-width: 480px
 }
 
 .footer__address-footer {
@@ -42,7 +42,7 @@
   }
 }
 .footer-block {
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
   margin-bottom: 60px;
 }
 }
@@ -74,7 +74,7 @@ flex-grow: 0;
 
 
 .footer__join-box {
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
   margin-bottom: 60px;
 }
   @media screen and (min-width: 1200px) {
@@ -132,10 +132,13 @@ flex-grow: 0;
   @media screen and (min-width: 1200px) {
     margin-left: 93px;
   }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-top: 60px;
+  }
 }
 
 .footer__submit-button {
-  margin-left: 125px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
