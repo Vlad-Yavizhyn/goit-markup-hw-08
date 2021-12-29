@@ -1,12 +1,15 @@
 .filter {
     display: flex;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     @media screen and (max-width: 767px) {
       flex-wrap: wrap;
       margin-top: -15px;
     }
     @media screen and (min-width: 768px) {
       justify-content: center;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
     }
   }
 
