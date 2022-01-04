@@ -360,6 +360,7 @@ img {
 
 .header__nav {
   display: flex;
+  height: 80px;
 }
 
 .header__button {
@@ -498,7 +499,7 @@ img {
   letter-spacing: 0.02em;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts__item:not(:last-child) {
     margin-bottom: 10px;
   }

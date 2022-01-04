@@ -1,6 +1,7 @@
 .header {
   background: var(--primary-color);
   border-bottom: 1px solid #ececec;
+  
 }
 
 .header__wrap {
@@ -19,6 +20,7 @@
 
 .header__nav {
   display: flex;
+  height: 80px;
   // align-items: center;
 }
 
@@ -144,7 +146,7 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     &:not(:last-child) {
       margin-bottom: 10px;
     }
